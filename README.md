@@ -6,10 +6,10 @@ This is a Keras & TensorFlow implementation of the SRGAN proposed in the scienti
 ## Installation
 
 The requirements are:
- 1. Python 3.6
- 2. requirements.txt
+ Python 3.6
+ requirements.txt
 
-1) First download the repository and install the requirements:
+1) First, download the repository and install the requirements:
 ```
 git clone https://github.com/lcalcagni/Super-resolution-Generative-Adversarial-Network
 cd Super-resolution-Generative-Adversarial-Network/
