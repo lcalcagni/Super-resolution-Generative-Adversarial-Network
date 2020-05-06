@@ -6,7 +6,8 @@ This is a Keras & TensorFlow implementation of the SRGAN proposed in the scienti
 ## Installation
 
 The requirements are:
- Python 3.6
+
+ Python 3.6\
  requirements.txt
 
 1) First, download the repository and install the requirements:
@@ -24,12 +25,12 @@ pip install -r requirements.txt
 
 ## Train & Predict
 
-3) To train, configure main.py with the desired number of epochs and batch_size and set **mode = 'train'**. Then, execute:
+3) To train, configure **main.py** with the desired number of **epochs**, **batch_size** and set **mode = 'train'**. Then, execute:
 ```
 python main.py
 ```
 
-4) To predict, configure main.py with the desired number samples and set **mode = 'predict'**. Then, execute:
+4) To predict, configure **main.py** with the desired number of **samples** and set **mode = 'predict'**. Then, execute:
 ```
 python main.py
 ```
