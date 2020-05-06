@@ -36,6 +36,17 @@ python main.py
 ```
 
 ---  
+## Train using Google Colaboratory
+
+You may want to train this SRGAN with Google Colaboratory, using one of the free GPUs available. To achieve this, follow the next steps:
+
+ 1. Clone or Download the Repository.
+ 2. Upload the Repository to your Google Drive, inside the folder **Colab Notebooks** .
+ 3. Upload the training data to  Google Drive,  inside the folder **inputs/train_data/**
+ 4. Open the notebook **SRGAN_trainColab.ipynb** with Google Colaboratory.
+ 5. Execute all the cells.
+
+---  
 
 ### References
 1. C. Ledig, L. Theis, F. Huszár, J. A. Caballero, A. Aitken, A. Tejani, J. Totz, Z. Wang, and W. Shi. -*Photo-realistic single image super-resolution using a generative adversarial network*. **2017** IEEE Conference on Computer Vision and Pattern Recognition (CVPR), pages 105–114, 2016.
