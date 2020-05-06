@@ -4,8 +4,8 @@ import tensorflow as tf
 import numpy as np
 from scipy.misc import imread, imresize
 
-import matplotlib as mpl      #Uncomment if you are running in Mac OS
-mpl.use('TkAgg')              #Uncomment if you are running in Mac OS
+#import matplotlib as mpl      #Uncomment if you are running in Mac OS
+#mpl.use('TkAgg')              #Uncomment if you are running in Mac OS
 
 import matplotlib.pyplot as plt
 
