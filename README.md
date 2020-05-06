@@ -42,7 +42,7 @@ You may want to train this SRGAN with Google Colaboratory, using one of the free
 
  1. Clone or Download the Repository.
  2. Upload the Repository to your Google Drive, inside the folder **Colab Notebooks** .
- 3. Upload the training data to  Google Drive,  inside the folder **inputs/train_data/**
+ 3. Upload the training data to  Google Drive,  inside the folder **input/train_data/**
  4. Open the notebook **SRGAN_trainColab.ipynb** with Google Colaboratory.
  5. Execute all the cells.
 
