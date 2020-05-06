@@ -36,7 +36,7 @@ python main.py
 ```
 
 ---  
-## Train using Google Colaboratory
+## Train with Google Colaboratory
 
 You may want to train this SRGAN with Google Colaboratory, using one of the free GPUs available. To achieve this, follow the next steps:
 
