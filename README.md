@@ -9,13 +9,32 @@ The requirements are:
  1. Python 3.6
  2. requirements.txt
 
-To run the code, first download the repository and install the requirements:
+1) To run the code, first download the repository and install the requirements:
 ```
 git clone https://github.com/lcalcagni/Super-resolution-Generative-Adversarial-Network
 cd Super-resolution-Generative-Adversarial-Network/
 pip install -r requirements.txt
 ```
 
+2) Download the images for training and save them into input/data_train and some of them into input/data_test for testing.
+
+3) To train, configure main.py with the desired number of epochs and batch_size and set
+```
+mode = 'train'
+```
+Then, execute:
+```
+python main.py
+```
+
+4) To predict, configure main.py with the desired number samples and set
+```
+mode = 'predict'
+```
+Then, execute
+```
+python main.py
+```
 
 ---  
 

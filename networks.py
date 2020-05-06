@@ -1,4 +1,19 @@
 
+from keras.applications import VGG19
+from keras import Input
+from keras.models import Model
+from keras.optimizers import Adam
+from keras.layers.convolutional import Conv2D, UpSampling2D
+from keras.layers import BatchNormalization, Activation, LeakyReLU, PReLU, Add, Dense
+
+
+
+
+
+
+###########################################
+
+#GENERATOR
 #------------------------------------------
 #Build the generator network
 def build_generator():
@@ -56,6 +71,9 @@ def build_generator():
     return model
 
 
+###########################################
+
+#DISCRIMINATOR
 #------------------------------------------
 #Build the discriminator network
 def build_discriminator():
@@ -96,5 +114,48 @@ def build_discriminator():
 
     #------
     #Create the model
-    model = Model(inputs=input_hr, outputs=output_class, name='discriminator')
+    model = Model(inputs=[input_hr], outputs=[output_class], name='discriminator')
     return model
+
+
+#------
+#Compile the discriminator
+def compile_discriminator(model):
+    model.compile(
+        loss='mse',
+        optimizer=Adam(0.0001, 0.9),
+        metrics=['accuracy']
+    )
+
+
+###########################################
+
+#VGG
+#------------------------------------------
+#Build the VGG network
+def build_vgg():
+
+    input_shape = (256, 256, 3)     #High Resolution image dimension
+
+    # Load a pre-trained VGG19 model trained on 'Imagenet' dataset
+    vgg = VGG19(weights="imagenet")
+    vgg.outputs = [vgg.layers[9].output]
+
+    input_layer = Input(shape=input_shape)
+
+    features = vgg(input_layer)
+
+    #------
+    #Create the model
+    model = Model(inputs=[input_layer], outputs=[features])
+    return model
+
+
+#------
+#Compile the VGG network
+def compile_vgg(model):
+    model.compile(
+        loss='mse',
+        optimizer=Adam(0.0001, 0.9),
+        metrics=['accuracy']
+    )
