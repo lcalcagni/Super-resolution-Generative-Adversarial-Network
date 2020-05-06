@@ -187,3 +187,4 @@ def predict(data_dir, samples, lr_shape, hr_shape):
 
 
     plot_save(lr_imgs, hr_imgs, gen_imgs, results_dir)
+    
