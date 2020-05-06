@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ```
 
 
-## Get Dataset
+## Dataset
 
 2) Download the images for training and save them into input/data_train and some of them into input/data_test for testing.
 
