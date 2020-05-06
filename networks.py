@@ -8,9 +8,6 @@ from keras.layers import BatchNormalization, Activation, LeakyReLU, PReLU, Add, 
 
 
 
-
-
-
 ###########################################
 
 #GENERATOR
